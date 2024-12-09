@@ -71,9 +71,9 @@ jobs:
         with:
           name: build-artifacts
           path: |
-            ${BASEDIR}/build.log
-            ${BASEDIR}/android/libs
-            ${BASEDIR}/android/obj
-            ${BASEDIR}/prebuilt/$(get_aar_directory)/ffmpeg-kit/ffmpeg-kit.aar
-            ${BASEDIR}/android/ffmpeg-kit-android-lib/src/main/res/raw
-            ${BASEDIR}/android
+            build.log
+            android/libs
+            android/obj
+            prebuilt/*/ffmpeg-kit/ffmpeg-kit.aar
+            android/ffmpeg-kit-android-lib/src/main/res/raw
+            android
