@@ -51,7 +51,7 @@ jobs:
       - name: Install libaom
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake ninja-build
+          sudo apt-get install -y cmake ninja-build yasm
           git clone --depth 1 https://aomedia.googlesource.com/aom
           mkdir aom_build
           cd aom_build
