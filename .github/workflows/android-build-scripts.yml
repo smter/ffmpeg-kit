@@ -59,7 +59,7 @@ jobs:
           ninja
           sudo ninja install
       - name: run the build script
-        run: ./android.sh -d --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --enable-libaom --enable-pic --enable-jni --enable-optimizations --enable-swscale --enable-shared --enable-pthreads --enable-v4l2-m2m --enable-small --enable-lto --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-gmp --enable-gnutls --enable-libmp3lame --enable-libass --enable-iconv --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libxml2 --enable-libopencore-amrnb --enable-libshine --enable-libspeex --enable-libdav1d --enable-libkvazaar --enable-libilbc --enable-libopus --enable-libsnappy --enable-libsoxr --enable-libtwolame --enable-libvo-amrwbenc --enable-libzimg --enable-zlib --enable-mediacodec
+        run: ./android.sh -d --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --enable-libaom --enable-gpl
       - name: print build logs
         if: ${{ always() }}
         run: cat build.log
