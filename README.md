@@ -232,3 +232,9 @@ See our [CONTRIBUTING](CONTRIBUTING.md) guide.
 - [FFmpeg API Documentation](https://ffmpeg.org/doxygen/4.0/index.html)
 - [FFmpeg Wiki](https://trac.ffmpeg.org/wiki/WikiStart)
 - [FFmpeg External Library Licenses](https://www.ffmpeg.org/doxygen/4.0/md_LICENSE.html)
+
+### 和原项目的不同
+
+这个Fork是为了编译用于Android项目的、包含libaom-av1编码器的FFmpeg-kit
+和原项目的不同只在于`.github\workflows\android-build-scripts.yml`中添加了编译libaom的部分和修改了build的参数
+运行的工作流最后获得的aar实测确实能AV1编码
